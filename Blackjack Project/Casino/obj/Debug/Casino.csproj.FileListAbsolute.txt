@@ -1,0 +1,6 @@
+C:\Users\jadan\Desktop\COMPUTER\C# Projects\Blackjack Full Compile\Casino\bin\Debug\Casino.dll
+C:\Users\jadan\Desktop\COMPUTER\C# Projects\Blackjack Full Compile\Casino\bin\Debug\Casino.pdb
+C:\Users\jadan\Desktop\COMPUTER\C# Projects\Blackjack Full Compile\Casino\obj\Debug\Casino.csproj.CoreCompileInputs.cache
+C:\Users\jadan\Desktop\COMPUTER\C# Projects\Blackjack Full Compile\Casino\obj\Debug\Casino.dll
+C:\Users\jadan\Desktop\COMPUTER\C# Projects\Blackjack Full Compile\Casino\obj\Debug\Casino.pdb
+C:\Users\jadan\Desktop\COMPUTER\C# Projects\Blackjack Full Compile\Casino\obj\Debug\Casino.csprojResolveAssemblyReference.cache

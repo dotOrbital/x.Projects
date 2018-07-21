@@ -1,0 +1,10 @@
+C:\Users\jadan\Desktop\COMPUTER\C# Projects\Blackjack Full Compile\Blackjack Full Compile\obj\Debug\Blackjack Full Compile.csprojResolveAssemblyReference.cache
+C:\Users\jadan\Desktop\COMPUTER\C# Projects\Blackjack Full Compile\Blackjack Full Compile\obj\Debug\Blackjack Full Compile.csproj.CoreCompileInputs.cache
+C:\Users\jadan\Desktop\COMPUTER\C# Projects\Blackjack Full Compile\Blackjack Full Compile\bin\Debug\Blackjack Full Compile.exe.config
+C:\Users\jadan\Desktop\COMPUTER\C# Projects\Blackjack Full Compile\Blackjack Full Compile\bin\Debug\Blackjack Full Compile.exe
+C:\Users\jadan\Desktop\COMPUTER\C# Projects\Blackjack Full Compile\Blackjack Full Compile\bin\Debug\Blackjack Full Compile.pdb
+C:\Users\jadan\Desktop\COMPUTER\C# Projects\Blackjack Full Compile\Blackjack Full Compile\obj\Debug\Blackjack Full Compile.exe
+C:\Users\jadan\Desktop\COMPUTER\C# Projects\Blackjack Full Compile\Blackjack Full Compile\obj\Debug\Blackjack Full Compile.pdb
+C:\Users\jadan\Desktop\COMPUTER\C# Projects\Blackjack Full Compile\Blackjack Full Compile\bin\Debug\Casino.dll
+C:\Users\jadan\Desktop\COMPUTER\C# Projects\Blackjack Full Compile\Blackjack Full Compile\bin\Debug\Casino.pdb
+C:\Users\jadan\Desktop\COMPUTER\C# Projects\Blackjack Full Compile\Blackjack Full Compile\obj\Debug\Blackjack Full Compile.csproj.CopyComplete
