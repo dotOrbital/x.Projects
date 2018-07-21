@@ -1,0 +1,57 @@
+﻿@using Insurance_v1.ViewModels
+@model List<InsuranceVM>
+
+<div class="row no-gutters m-3">
+    <div class="card col-sm-12 col-md-10 col-lg-6 mx-auto shadow">
+        <div class="card-header text-center">
+            <h5 class="m-0">Registered Quotes</h5>
+        </div>
+
+        <div class="card-body">
+            @foreach (var preQuote in Model)
+            {
+                <div class="row mb-3">
+                    <div class="col-2">
+                        @preQuote.FirstName
+                    </div>
+                    <div class="col">
+                        @preQuote.LastName
+                    </div>
+                    <div class="col-4">
+                        @preQuote.EmailAddress
+                    </div>
+                    <div>
+                        <text>$@preQuote.UserQuote per month</text>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+@*<div class="card-body">
+        <div class="row mb-3">
+            <div class="col-2">
+                <text class="text-center text-primary">First Name:</text>
+            </div>
+            <div class="col-5">
+                <text class="text-center text-primary">Last Name:</text>
+            </div>
+            <div class="col-4">
+                <text class="text-center text-primary">Email Address:</text>
+            </div>
+            <div class="col">
+                <text class="text-center text-primary">Quote:</text>
+            </div>
+        </div>
+    </div>*@

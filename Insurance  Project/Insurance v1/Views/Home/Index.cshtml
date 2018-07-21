@@ -1,0 +1,81 @@
+﻿<div class="jumbotron text-center">
+    <h1>Welcome to dotOrbital Insurance</h1>
+</div>
+<div class="row no-gutters m-3">
+    <div class="card col-sm-12 col-md-10 col-lg-6 mx-auto shadow">
+        <div class="card-header text-center">
+            <h5 class="m-0 text-primary">Please enter your information below for a quote:</h5>
+        </div>
+        <div class="card-body">
+            @using (Html.BeginForm("MemberQuote", "Home", FormMethod.Post))
+            {
+                <h5 class="text-primary">Personal Information:</h5>
+                <div class="row no-gutters">
+                    <div class="form-group col-md-12">
+                        <input name="firstName" type="text" class="form-control" placeholder="First Name" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-12">
+                        <input name="lastName" type="text" class="form-control" placeholder="Last Name" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-12">
+                        <input name="emailAddress" type="email" class="form-control" placeholder="Email Address" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-12">
+                        <text>Date of Birth:</text>
+                        <input name="dateBirth" type="text" class="form-control" placeholder="MM/DD/YYYY" />
+                    </div>
+                </div>
+
+
+                <br />
+                <br />
+                <h5 class="text-primary">Car Information:</h5>
+                <div class="row no-gutters">
+                    <div class="form-group col-md-12">
+                        <input name="carYear" type="text" class="form-control" placeholder="Year of Car" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-12">
+                        <input name="carMake" type="text" class="form-control" placeholder="Car Make" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-12">
+                        <input name="carModel" type="text" class="form-control" placeholder="Car Model" />
+                    </div>
+                </div>
+
+
+                <br />
+                <br />
+                <h5 class="text-primary">Liability Information:</h5>
+                <div class="row no-gutters">
+                    <div class="form-group col-md-12">
+                        <text>I have a DUI.</text>
+                        <input name="dUI" type="text" class="form-control" placeholder="True or False" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-12">
+                        <text>How many speeding tickets have you had?</text>
+                        <input name="speedingTickets" type="text" class="form-control" placeholder="Digits Only" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-12">
+                        <text>I would like full coverage.</text>
+                        <input name="fullCoverage" type="text" class="form-control" placeholder="True or False" />
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-block btn-primary">Submit</button>
+            }
+        </div>
+    </div>
+</div>
