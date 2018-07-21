@@ -1,0 +1,245 @@
+<!doctype html>
+  <html lang="en">
+    <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>dotOrbital Pizza - Pizza from Another World</title>
+
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+      <link rel="stylesheet" href="./css/Pizza.css">
+    </head>
+
+  <body>
+    <!-- This is where the page content begins -->
+
+    <!-- NAVbar -->
+    <nav class="navbar navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="#jumbo">
+        <img src="./images/Bladerunner Metallic Diag.png" width="40" height="40" class="d-inline-block align-top" alt="">
+        dotOrbital Pizza
+      </a>
+    </nav>
+
+<!--- Jumbotron -->
+    <div id="jumbo">
+    </div>
+
+<!-- PIZZA SIZE -->
+      <br>
+      <br>
+      <br>
+      <div class="container-fluid" id="Size" style="background-color: #fde7df">
+      <p><b>Select Your Pizza Size:</b></p>
+        <div>
+          <form id="Pie" action="" style="position: right">
+            <input type="radio" class="Pies" name="size" value="6" checked> Personal Pzza ($6.00)</input><br>
+            <input type="radio" class="Pies" name="size" value="10"> Medium Pizza ($10.00)</input><br>
+            <input type="radio" class="Pies" name="size" value="14"> Large Pizza ($14.00)</input><br>
+            <input type="radio" class="Pies" name="size" value="16"> Extra Large Pizza ($16.00)</input><br>
+          </form>
+        </div>
+        <br>
+      </div>
+
+<!--- Carousel -->
+
+    <div id="carouselExampleControls" class=" container-fluid carousel slide options rounded" data-ride="carousel" style="background-color: #FAB297">
+        <div class="carousel-inner">
+
+
+          <div class="carousel-item active">
+            <!-- MEATS -->
+            <br>
+                  <p><b>Select Options:</b></p>
+                  <div class="container-fluid Meat" id="Meat">
+                    <form id="Meats" action="/action_page.php" method="get">
+                      <input type="checkbox" class="Meats" value="Pepperoni (+ $1.00)"onclick="add_sub(this)"> Pepperoni (+ $1.00)<br>
+                      <input type="checkbox" class="Meats" value="Sausage (+ $1.00)" onclick="add_sub(this)"> Sausage (+ $1.00)<br>
+                      <input type="checkbox" class="Meats" value="Canadian Bacon (+ $1.00)" onclick="add_sub(this)"> Canadian Bacon (+ $1.00)<br>
+                      <input type="checkbox" class="Meats" value="Ground Beef (+ $1.00)" onclick="add_sub(this)"> Ground Beef (+ $1.00)<br>
+                      <input type="checkbox" class="Meats" value="Anchovy (+ $1.00)" onclick="add_sub(this)"> Anchovy (+ $1.00)<br>
+                      <input type="checkbox" class="Meats" value="Chicken (+ $1.00)" onclick="add_sub(this)"> Chicken (+ $1.00)<br>
+                    </form>
+                  </div>
+                  <br>
+              <div class="carousel-caption d-none d-md-block text-muted toppingcontainer">
+                  <h5>Additional Meat items (first one is complementary)</h5>
+                  <p>+$1.00 each additional meat items beyond the first complementary meat item.</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <!-- CHEESE -->
+            <br>
+                  <p><b>Select Options:</b></p>
+                  <div class="container-fluid" id="Cheese">
+                      <form action="">
+                        <input type="radio" class="cheese" name="Cheese" value="Regular Cheese" checked> Regular Cheese<br>
+                        <input type="radio" class="cheese" name="Cheese" value="No Cheese"> No Cheese<br>
+                        <input type="radio" class="cheese" name="Cheese" value="Extra Cheese"> Extra Cheese (+ $3.00)<br>
+                      </form>
+                  </div>
+                  <br>
+                  <div class="carousel-caption d-none d-md-block text-muted toppingcontainer">
+                    <h5>Choose Your Cheese Amount</h5>
+                  </div>
+          </div>
+          <div class="carousel-item">
+            <!-- CRUST -->
+            <br>
+                  <p><b>Select Options:</b></p>
+                  <div class="container-fluid" id="Crust">
+                      <form action="">
+                        <input type="radio" class="crust" name="Crust" value="Plain Crust" checked> Plain Crust<br>
+                        <input type="radio" class="crust" name="Crust" value="Garlic Butter Crust"> Garlic Butter Crust<br>
+                        <input type="radio" class="crust" name="Crust" value="Cheese Stuffed Crust"> Cheese Stuffed Crust (+ $3.00)<br>
+                        <input type="radio" class="crust" name="Crust" value="Spicy Crust"> Spicy Crust<br>
+                        <input type="radio" class="crust" name="Crust" value="House Special Crust"> House Special Crust<br>
+                      </form>
+                  </div>
+                  <br>
+                <div class="carousel-caption d-none d-md-block text-muted toppingcontainer">
+                  <h5>Choose Your Crust Type</h5>
+                </div>
+          </div>
+          <div class="carousel-item">
+            <!-- SAUCE -->
+            <br>
+                  <p><b>Select Options:</b></p>
+                  <div class="container-fluid" id="Sauce">
+                      <form action="">
+                        <input type="radio" name="Sauce" value="0" checked> Marinara Sauce<br>
+                        <input type="radio" name="Sauce" value="0"> White Sauce<br>
+                        <input type="radio" name="Sauce" value="0"> Barbeque Sauce<br>
+                        <input type="radio" name="Sauce" value="0"> No Sauce<br>
+                      </form>
+                  </div>
+                  <br>
+              <div class="carousel-caption d-none d-md-block text-muted toppingcontainer">
+                <h5>Choose Your Sauce Type</h5>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <!-- Veggies -->
+            <br>
+                  <p><b>Select Options:</b></p>
+                  <div class="container-fluid" id="Veggies">
+                    <form id="Veggies" action="/action_page.php" method="get">
+                      <input type="checkbox" class="Veg" name="Veggies" value="Tomatoes (+ $1.00)" onclick="add_sub2(this)"> Tomatoes (+ $1.00)<br>
+                      <input type="checkbox" class="Veg" name="Veggies" value="Onions (+ $1.00)" onclick="add_sub2(this)"> Onions (+ $1.00)<br>
+                      <input type="checkbox" class="Veg" name="Veggies" value="Olives (+ $1.00)" onclick="add_sub2(this)"> Olives (+ $1.00)<br>
+                      <input type="checkbox" class="Veg" name="Veggies" value="Green Peppers (+ $1.00)" onclick="add_sub2(this)"> Green Peppers (+ $1.00)<br>
+                      <input type="checkbox" class="Veg" name="Veggies" value="Mushrooms (+ $1.00)" onclick="add_sub2(this)"> Mushrooms (+ $1.00)<br>
+                      <input type="checkbox" class="Veg" name="Veggies" value="Pineapple (+ $1.00)" onclick="add_sub2(this)"> Pineapple (+ $1.00)<br>
+                      <input type="checkbox" class="Veg" name="Veggies" value="Spinach (+ $1.00)" onclick="add_sub2(this)"> Spinach (+ $1.00)<br>
+                      <input type="checkbox" class="Veg" name="Veggies" value="Jalepeno (+ $1.00)" onclick="add_sub2(this)"> Jalepeno (+ $1.00)<br>
+                    </form>
+                  </div>
+                  <br>
+              <div class="carousel-caption d-none d-md-block text-muted toppingcontainer">
+                  <h5>Additional Veggie items (first one is complementary)</h5>
+                  <p>+$1.00 each additional veggie items beyond the first complementary veggie item.</p>
+              </div>
+          </div>
+
+        </div>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+  </div>
+
+
+<!--- Order Bar --->
+        <div class="text-center container-fluid" style="background-color: #fde7df">
+          <br>
+          <button class='pulse-button' type="button" data-toggle="modal" data-target="#register" align="center" onclick="buildPizza()" style=" padding:10px; color:black; padding-top:20px;"><b>CONFIRM ORDER</b></button>
+          <br>
+        </div>
+
+        <!-- MODAL DONE -->
+        <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="welcome modal-title text-center" id="exampleModalLabel"> - ORDER SUMMARY - </h4>
+              </div>
+
+              <div class="modal-body">
+                  <div class="container">
+                    <div class="text-center">
+                      <p class="summarytext" style="margin-bottom: -2px;">Pizza Size: </p>
+                    <textarea id="PizzaArea" name="type" rows="1" cols="35" style="font-size: 10px; : -20px;" readonly></textarea>
+                  </div>
+                  <div class="text-center">
+                    <p class="summarytext" style="margin-bottom: -2px;">Crust Style: </p>
+                  <textarea id="CrustArea" name="type" rows="1" cols="35" style="font-size: 10px; : -20px;" readonly></textarea>
+                  </div>
+                  <div class="text-center">
+                    <p class="summarytext" style="margin-bottom: -2px;">Sauce Type: </p>
+                  <textarea id="SauceArea" name="type" rows="1" cols="35" style="font-size: 10px; : -20px;" readonly></textarea>
+                  </div>
+                  <div class="text-center">
+                    <p class="summarytext" style="margin-bottom: -2px;">Cheese Toppings: </p>
+                  <textarea id="CheeseArea" name="type" rows="1" cols="35" style="font-size: 10px; : -20px;" readonly></textarea>
+                  </div>
+                    <div class="text-center">
+                      <p class="summarytext" style="margin-bottom: -2px;">Meats Toppings: [First Topping Free]</p>
+                    <textarea id="MeatArea" name="type" rows="4" cols="35" style="font-size: 10px; : -20px;" readonly></textarea>
+                    </div>
+
+                    <div class="text-center">
+                      <p class="summarytext" style="margin-bottom: -2px;">Veggie Toppings: [First Topping Free]</p>
+                    <textarea id="VeggieArea" name="type" rows="4" cols="35" style="font-size:10px;" readonly></textarea>
+                    </div>
+                    <br><br>
+                    <div id="totalPrice1"><h4>Total Price:</h4>
+                      <h4 id="FullPrice"></h4>
+                    </div>
+                  </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-dark" data-dismiss="modal">Re-Imagine Pizza</button>
+                <button type="button" class="btn btn-dark" onclick="sumPrice()">Calculate Total</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">ORDER!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+<!-- Testing -->
+        <div>
+          <p id="price22"></p>
+        </div>
+
+<!--Footer-->
+    <div id="footer" class="" style="background-color: #fde7df">
+        <ul class=" nav">
+        <li class="nav-item phone">
+          <p>Phone: 503-886-2077 | </p>
+        </li>
+        <li class="nav-item address">
+          <p>&nbsp463 NW Ofwar Ave, Portland, OR 97232</p>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled text-primary" href="#jumbo">&copy;2018 dotOrbital Pizza</a>
+        </li>
+        <img src="./images/Bladerunner Metallic Diag.png" width="40" height="40" alt="horizontal2">
+        </ul>
+    </div>
+
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+      <script src="js/pizza.js"></script>
+
+  </body>
+
+  </html>
+
+  <!-- https://www.youtube.com/watch?v=5hPVpVtgle4 -->
+  <!-- http://imakewebthings.com/waypoints/guides/getting-started/ -->
